@@ -1,0 +1,10 @@
+Description:
+
+This program parses a log file written in the Apache combined log format. It takes the file as input which is in the same directory. Then it displays the top 10 countries which had the most visitors. It is mainly a parser that extracts the ipaddress from the lines and uses the GeoLite2 database to geolocate them.
+
+How to run:
+Currently it is not an executable and has to be run using the 'go run main.go' command. Navigate to the source folder and execute the command. YOu will need to install Golang in your system and also the following package - 
+
+github.com/oschwald/geoip2-golang
+
+Also, you will need to download the GeoLite2 database and put it in the same source folder.
